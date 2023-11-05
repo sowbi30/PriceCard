@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="container">
-      <div className="box my-5 py-5">
+      <div className="box my-4 py-4">
       <div className='heading text-center'>
         <h1>PRICE-CARD</h1>
       </div>
@@ -43,7 +43,7 @@ function App() {
           <div className="card">
               <div className="title">
                 <span>PLUS</span>
-                <h1 className='price'>&#x24;9/month</h1>
+                <h1 className='price'>$9/month</h1>
               </div>
               <div className="features">
               <ul>
@@ -68,7 +68,7 @@ function App() {
           <div className="card">
               <div className="title">
                 <span>PRO</span>
-                <h1 className='price'>&#x24;49/month</h1>
+                <h1 className='price'>$49/month</h1>
               </div>
               <div className="features">
               <ul>
