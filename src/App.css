@@ -60,4 +60,9 @@ section.pricing {
   .pricing .card:hover .btn {
     opacity: 1;
   }
+ .featureClass .fa-li.true:hover{
+   color:greenyellow;
+}
+  .featureClass .fa-li.false:hover{
+   color: red;
 }
