@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 <FontAwesomeIcon icon="fa-regular fa-check" />
 <FontAwesomeIcon icon="fa-solid fa-xmark" />
-  import 
+import './Style.css';
 
 function PriceCard() {
   return(
