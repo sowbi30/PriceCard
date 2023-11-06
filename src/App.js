@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
-import PricingCol from '.components/pricecards/PriceCard';
+import PriceCard from '.components/pricecards/PriceCard';
 
 
 
