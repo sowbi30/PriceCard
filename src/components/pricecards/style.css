@@ -1,1 +1,121 @@
+* {
+  padding: 0;
+  margin: 0.1;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
+.heading h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color:rgb(56, 56, 157);
+  margin-bottom: 3rem;
+  text-decoration: underline !important; 
+}
+
+body {
+  background: linear-gradient(to bottom, #87CEFA, #1E90FF);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.price-card {
+    border: 2px solid #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column; /* Use "column" to create a column layout */
+    align-items: center; /* Center align the cards */
+    height: 3%;
+    width: 20%;
+}
+
+.card {
+    border-radius: 15px !important;
+    margin: 10px;
+    margin-top: 9px;
+    width: 95% !important;
+    height: 100% !important;
+      
+  }
+  .card:hover {
+    box-shadow: 0 -1rem 1rem 0;
+    color: black;
+  }
+  
+  
+  .title {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  
+  .title h1.price{
+    font-weight: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .title span {
+    color: gray;
+  }
+  .features ul{
+    padding-left: 25px;
+  }
+  .features ul li {
+    list-style-type: none;
+    
+  }
+  .features li{
+    margin-bottom: 18px;
+  }
+  .features li span {
+    margin-right: 10px;
+    font: icon;
+    font-weight: bolder;
+    padding:18px;
+  }
+  .features li span.r{
+    color: black;
+     }
+     .features li span.r:hover{
+       color: greenyellow;
+     }
+  .features li.wrong {
+    color: rgb(128, 128, 128);
+  }
+  .features li.wrong .w{
+    color: rgba(128, 128, 128, 0.83);
+  }
+  .features li.wrong .w:hover{
+    color:red;
+  }
+  .features .button{
+    margin-top: 18x;
+  }
+  .button {
+    text-align: center;
+  }
+  
+  button{
+    width: 90%;
+    padding: 15px 0;
+    font-weight: bold;
+    border-radius: 30px !important;
+    background:rgb(20, 153, 198);
+    border: 0;
+    color: white;
+    opacity: 2s;
+  }
+  button:hover{
+    background: blue;
+    opacity: 4s;
+  }
 
