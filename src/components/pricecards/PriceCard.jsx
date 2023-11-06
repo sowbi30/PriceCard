@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureItem from "./Features";
+import FeatureItem from ".components/pricecards/Features";
 
 function PriceCard({tier, pricing, features}){
   return (
