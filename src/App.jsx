@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PricingSection() {
+function App() {
   return (
     <section className="pricing py-5">
       <div className="container">
@@ -28,7 +28,7 @@ function PricingSection() {
               </div>
             </div>
           </div>
-          {/* Plus Tier */}
+     
           <div className="col-lg-4">
             <div className="card mb-5 mb-lg-0">
               <div className="card-body">
@@ -80,4 +80,4 @@ function PricingSection() {
   );
 }
 
-export default PricingSection;
+export default App;
