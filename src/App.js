@@ -3,76 +3,69 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import PriceCard from '.components/pricecards/PriceCard';
 
-
+import React from 'react';
+import './App.css';
+import Card from './Card';
 
 function App() {
-
-  // Features List Available
-  const tierFeatures = {
-      "free": [
-        {"id":"0", "title":"Single User", "availability": true },
-        {"id":"1", "title":"5GB Storage", "availability": true },
-        {"id":"2", "title":"Unlimited Public Projects", "availability": true },
-        {"id":"3", "title":"Community Access", "availability": true },
-        {"id":"4", "title":"Unlimited Private Projects", "availability": false },
-        {"id":"5", "title":"Dedicated Phone Support", "availability": false },
-        {"id":"6", "title":"Free Subdomain", "availability": false },
-        {"id":"7", "title":"Monthly Status Reports", "availability": false },
-      ],
-      "plus": [
-        {"id":"8", "title":"5 Users", "availability": true },
-        {"id":"9", "title":"50GB Storage", "availability": true },
-        {"id":"10", "title":"Unlimited Public Projects", "availability": true },
-        {"id":"11", "title":"Community Access", "availability": true },
-        {"id":"12", "title":"Unlimited Private Projects", "availability": true },
-        {"id":"13", "title":"Dedicated Phone Support", "availability": true },
-        {"id":"14", "title":"Free Subdomain", "availability": true },
-        {"id":"15", "title":"Monthly Status Reports", "availability": false },
-      ],
-      "pro": [
-        {"id":"16", "title":"Unlimited Users", "availability": true },
-        {"id":"17", "title":"150GB Storage", "availability": true },
-        {"id":"18", "title":"Unlimited Public Projects", "availability": true },
-        {"id":"19", "title":"Community Access", "availability": true },
-        {"id":"20", "title":"Unlimited Private Projects", "availability": true },
-        {"id":"21", "title":"Dedicated Phone Support", "availability": true },
-        {"id":"22", "title":"Free Subdomain", "availability": true },
-        {"id":"23", "title":"Monthly Status Reports", "availability": true },
-      ]
-
-  };
-
+  const plandetails = [
+    {
+      price: 0,
+      planName: 'FREE',
+      users: 'Single User',
+      gb: '10GB Storage',
+      Publicproject: '10 Public Projects',
+      access: 'Limited Access',
+      project: '2 Private Projects',
+      support: 'Email Support',
+      domain: 'No Subdomain',
+      reports: 'Monthly Status Reports',
+    },
+    {
+      price: 9,
+      planName: 'PLUS',
+      users: 'Multiple Users',
+      gb: '50GB Storage',
+      Publicproject: 'Unlimited Public Projects',
+      access: 'Full Access',
+      project: '10 Private Projects',
+      support: 'Phone Support',
+      domain: 'Custom Domain',
+      reports: 'Weekly Status Reports',
+    },
+    {
+      price: 49,
+      planName: 'PRO',
+      users: 'Single User',
+      gb: '5GB Storage',
+      Publicproject: 'Unlimited Public Projects',
+      access: 'Limited Access',
+      project: '1 Private Project',
+      support: 'No Support',
+      domain: 'Free Subdomain',
+      reports: 'No Reports',
+    },
+  ];
 
   return (
-    <div className="App">
-        <section className="pricing py-5">
-          <div className="container">
-              <div className="row">
-              
-                  <PriceCard 
-                    tier = { "Free" }
-                    pricing = { 0 }
-                    features = { tierFeatures["free"] }
-                  />
-                  
-                  <PriceCard
-                    tier = { "Plus" }
-                    pricing = { 9 }
-                    features = { tierFeatures["plus"] }
-                  />
-                  
-                  <PriceCard
-                    tier = { "Pro" }
-                    pricing = { 49 }
-                    features = { tierFeatures["pro"] }
-                  />
-              </div> 
-          
-          </div>
-        
-</section>
+    <div className='page'>
+    <section class="pricing py-5">
+    <div className="container">
+      <div className="row">
+        <div className="col">
+        </div>
+      </div>
+      <div className="row">
+        {plandetails.map((details, index) => (
+          <Card details={details} key={index} />
+        ))}
+      </div>
+    </div>
+    </section>
     </div>
   );
 }
 
 export default App;
+
+
