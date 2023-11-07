@@ -1,5 +1,5 @@
-import Feature from ".components/pricecards/Feature";
- function Card ({tier, pricing, features}){
+import Feature from "./Feature";
+ function PriceCard ({tier, pricing, features}){
       return (
           <div className="col-lg-4">
 
