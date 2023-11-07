@@ -49,21 +49,21 @@ function App() {
           <div className="container">
               <div className="row">
                   {/* <!-- Free Tier --> */}
-                  <PricingCol 
+                  <PriceCard 
                     tier = { "Free" }
                     pricing = { 0 }
                     features = { tierFeatures["free"] }
                   />
                   {/* <!-- Plus Tier --> */}
-                  <PricingCol 
+                  <PriceCard
                     tier = { "Plus" }
-                    pricing = { 200 }
+                    pricing = { 9 }
                     features = { tierFeatures["plus"] }
                   />
                   {/* <!-- Pro Tier --> */}
-                  <PricingCol 
+                  <PriceCard
                     tier = { "Pro" }
-                    pricing = { 800 }
+                    pricing = { 49 }
                     features = { tierFeatures["pro"] }
                   />
               </div> 
