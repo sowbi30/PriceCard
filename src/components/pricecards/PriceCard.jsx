@@ -1,33 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import FeatureItem from "./FeatureItem";
 
-function Card({ details }) {
+function Card(){      
+const Card = ({ details }) => {
   return (
-    <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-        <header>
-        <h6 className="card-title text-muted text-uppercase text-center">{details.planName}</h6>
-        <h1 className="card-price text-center"><span className="period">${details.price}<sub>/month</sub></span></h1>
-        </header>
-        <ul className="fa-ul">
-          <li><span className="fa-li"><i className="fas fa-check"></i></span>{details.users}</li>
-          <li><span className="fa-li"><i className="fas fa-check"></i></span>{details.gb}</li>
-          <li><span className="fa-li"><i className="fas fa-check"></i></span>{details.Publicproject}</li>
-          <li><span className="fa-li"><i className="fas fa-check"></i></span>{details.access}</li>
-          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>{details.project}</li>
-          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>{details.support}</li>
-          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>{details.domain}</li>
-          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>{details.reports}</li>
-        </ul>
-        <div className="d-grid">
-          <a className="btn btn-primary text-uppercase">Button</a>
+    <div className="col-lg-4 col-md-8">
+      
+      <div className="card mb-5 mb-lg-0">
+        
+        <div className="card-body">
+          
+          <h5 className="card-title text-muted text-uppercase text-center">{details.title}</h5>
+          
+          <h6 className="card-price text-center">${details.pack}<span className="period">/month</span></h6>
+          
+          <hr />
+          
+          
+                );
+              })}
+            </ul>
+            <div className="d-grid">
+              <button className="btn btn-primary text-uppercase">Button</button>
+            </div>
         </div>
       </div>
-      /</div>
     </div>
   );
-}
+};
+
+
 
 export default Card;
