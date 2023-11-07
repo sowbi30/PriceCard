@@ -53,12 +53,12 @@ function App() {
                   />
                   <priceCard
                     tier = { "Plus" }
-                    pricing = { 200 }
+                    pricing = { 9 }
                     features = { Plandetails["plus"] }
                   />
                   <PriceCard 
                     tier = { "Pro" }
-                    pricing = { 800 }
+                    pricing = { 49 }
                     features = { Plandetails["pro"] }
                   />
               </div> 
