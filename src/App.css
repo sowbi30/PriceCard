@@ -2,89 +2,84 @@
 *{
   background:fixed;
 }
-div.page{
-  background-color: #0062E6;
+section {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
 }
 
+.main .card {
+  border: 2px solid #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column; /* Use "column" to create a column layout */
+    align-items: center; /* Center align the cards */
+    height: 3%;
+    width: 20%;
+}
 
-.pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  }
-  .card{
-    border-radius: 15px !important;
-    margin: 10px;
-    margin-top: 9px;
-    width: 95% !important;
-    height: 100% !important;
-  }
- .card:hover{
-  box-shadow: 0 -1rem 1rem 0;
-    color: black;
-}
-.header{
-  margin-bottom: 18px;
-}
-.pricing hr {
+hr {
   margin: 1.5rem 0;
 }
 
-.pricing .card-title {
-  text-align: center;
-    margin: 15px;
-    padding: 10px;
-    font-weight: bolder;
-    padding-bottom: 10;
-    font-weight: normal;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }
 
-.pricing h1 span {
-  font-size: 4rem;
-  border-bottom: 1px solid grey;
+.card-price {
+  font-size: 3rem;
   margin: 0;
 }
 
-.pricing .card-price .period {
+.card-price .period {
   font-size: 0.8rem;
 }
 
-.pricing ul li {
+ul li {
   margin-bottom: 1rem;
 }
 
-ul li span i.fas fa-check:hover{
-color: greenyellow;
+.text-muted {
+  opacity: 1s;
 }
 
-ul li span i.fas fa-times:hover{
-  color:red;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  font-size: 80%;
+.main .btn {
+  font-size: 80% !important;
   border-radius: 5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   padding: 1rem;
   opacity: 0.7;
   transition: all 0.2s;
 }
+.card:hover {
+  box-shadow: 0 -1rem 1rem 0;
+  color: black;
+}
+.card .btn:hover {
+  opacity: 2s;
+  background-color: darkblue;
+}
 
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
+.features ul li {
+  list-style-type: none;
+  
+}
+.features li{
+  margin-bottom: 18px;
+}
+.features li span {
+  margin-right: 10px;
+  font: icon;
+  font-weight: bolder;
+  padding:18px;
+}
 
   .pricing .card:hover .btn {
     opacity: 1;
