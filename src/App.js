@@ -48,28 +48,28 @@ function App() {
         <section className="pricing py-5">
           <div className="container">
               <div className="row">
-                  {/* <!-- Free Tier --> */}
+              
                   <PriceCard 
                     tier = { "Free" }
                     pricing = { 0 }
                     features = { tierFeatures["free"] }
                   />
-                  {/* <!-- Plus Tier --> */}
+                  
                   <PriceCard
                     tier = { "Plus" }
                     pricing = { 9 }
                     features = { tierFeatures["plus"] }
                   />
-                  {/* <!-- Pro Tier --> */}
+                  
                   <PriceCard
                     tier = { "Pro" }
                     pricing = { 49 }
                     features = { tierFeatures["pro"] }
                   />
               </div> 
-              {/* <!--row--> */}
+          
           </div>
-          {/* <!--Container--> */}
+        
 </section>
     </div>
   );
