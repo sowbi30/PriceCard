@@ -16,7 +16,7 @@ function PriceCard({tier, pricing, features}){
                       {features.map((feature) => {
                           console.log(feature);
                           return (
-                          <FeatureItem 
+                          <Feature 
                               title={feature.title} 
                               availability={feature.availability} 
                               key={feature.id}
