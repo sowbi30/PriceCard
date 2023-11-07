@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
 
-
-function PriceCard({ details }) {
+function Card({ details }) {
   return (
     <div class="col-lg-4">
         <div class="card mb-5 mb-lg-0">
@@ -29,6 +30,4 @@ function PriceCard({ details }) {
   );
 }
 
-  export default PriceCard;
-
-
+export default Card;
