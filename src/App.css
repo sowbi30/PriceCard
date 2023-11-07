@@ -67,3 +67,17 @@
     opacity: 1;
   }
 }
+
+.icon-hover:hover {
+  transform: scale(1.2);
+}
+
+
+.icon-hover.fa-check:hover {
+  color: greenyellow; 
+}
+
+
+.icon-hover.fa-xmark:hover {
+  color: red;
+}
