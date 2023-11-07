@@ -1,28 +1,49 @@
-section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062e6, #33aeff);
+
+*{
+  background:fixed;
 }
+div.page{
+  background-color: #0062E6;
+}
+
 
 .pricing .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  .card{
+    border-radius: 15px !important;
+    margin: 10px;
+    margin-top: 9px;
+    width: 95% !important;
+    height: 100% !important;
+  }
+ .card:hover{
+  box-shadow: 0 -1rem 1rem 0;
+    color: black;
 }
-
+.header{
+  margin-bottom: 18px;
+}
 .pricing hr {
   margin: 1.5rem 0;
 }
 
 .pricing .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
+  text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-weight: bolder;
+    padding-bottom: 10;
+    font-weight: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.pricing .card-price {
-  font-size: 3rem;
+.pricing h1 span {
+  font-size: 4rem;
+  border-bottom: 1px solid grey;
   margin: 0;
 }
 
@@ -34,6 +55,14 @@ section.pricing {
   margin-bottom: 1rem;
 }
 
+ul li span i.fas fa-check:hover{
+color: greenyellow;
+}
+
+ul li span i.fas fa-times:hover{
+  color:red;
+}
+
 .pricing .text-muted {
   opacity: 0.7;
 }
@@ -41,7 +70,7 @@ section.pricing {
 .pricing .btn {
   font-size: 80%;
   border-radius: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
   opacity: 0.7;
@@ -52,17 +81,12 @@ section.pricing {
 
 @media (min-width: 992px) {
   .pricing .card:hover {
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
 
   .pricing .card:hover .btn {
     opacity: 1;
   }
- .featureClass .fa-li.true:hover{
-   color:greenyellow;
-}
-  .featureClass .fa-li.false:hover{
-   color: red;
 }
