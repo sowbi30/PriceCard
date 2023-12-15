@@ -39,37 +39,28 @@ function App() {
 
   };
 
+const renderPriceCards = (plan, index) => (
+    <PriceCard
+      key={index}
+      tier={plan}
+      pricing={index === 0 ? 0 : index === 1 ? 9 : 49}  // Assuming the pricing is incremental
+      features={PlanDetails[plan]}
+    />
+  );
+
+  const planTiers = Object.keys(PlanDetails);
 
   return (
     <div className="App">
-        <section className="pricing py-5">
-          <div className="container">
-              <div className="row">
-                  {/* <!-- Free Tier --> */}
-                  <PriceCard
-                    tier = { "Free" }
-                    pricing = { 0 }
-                    features = { Plandetails["free"] }
-                  />
-                  <priceCard
-                    tier = { "Plus" }
-                    pricing = { 9 }
-                    features = { Plandetails["plus"] }
-                  />
-                  <PriceCard 
-                    tier = { "Pro" }
-                    pricing = { 49 }
-                    features = { Plandetails["pro"] }
-                  />
-              </div> 
-             
+      <section className="pricing py-5">
+        <div className="container">
+          <div className="row">
+            {planTiers.map((plan, index) => renderPriceCards(plan, index))}
           </div>
-          
-</section>
+        </div>
+      </section>
     </div>
   );
 }
 
 export default App;
-
- 
